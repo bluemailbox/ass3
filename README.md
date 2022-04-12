@@ -15,7 +15,11 @@ Intents are descriptors that allow the chatbot to determine how to respond to yo
 
 Entities are lists or categories of miscellaneous objects or categories that the chatbot might need to understand. These are also written into the chatbot so it can understand the specifics of what you might be asking for. The chatbot needs this data written into it because it might possibly have to refer back to it later. Ex: We may have a list of entities, called $drinks. In this list may be some options like water, soda, wine etc. When we reference drinks asking what drinks are available to the chatbot, it needs to be able to give us options in that category (parameter type)  and will recite what is written in. Another use case is having the chatbot capable of repeating an entity back to you in conversation. Ex: “What would you like to drink?” “I’ll have water” “Sure, $drinks coming up.” The chatbot here recognizes water as a value in entity @drink and returns the JSON object {“drinks” : “water”}, and in its response we can use the $drinks variable to reference the user's choice. 
 
-## 📕 Features
+## 📕 Features - NEW
+***added Twitter API as well as Wikipedia API***
+users are now able to search wikipedia by name for any summary on a person. This feature is used by stating something along the line of "show wiki 'person name'"
+"read wikipedia 'person name'"
+Twitter features include link to a developer twitter account. Upon being granted additional clearance, users can post and review tweets under the developer account name
 
 * New and improved GUI
 * Extra topic added
